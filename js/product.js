@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     let SHEET_ID = '1mmFG39YIzlr0ZYn06ziIN6uhy9uu40XQx288KuxrZzM';
     let SHEET_TITLE = 'Products';
-    let SHEET_RANGE = "A1:G12"
+    // let SHEET_RANGE = "A1:E106";  + '&range=' + SHEET_RANGE
     let FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE);
 
     fetch(FULL_URL)
@@ -37,7 +37,6 @@ $(document).ready(function () {
                 </div>
                 `;
         });
-        console.log($('.isotope-grid'));
         $('.isotope-grid').html(productHtml);
 
     })

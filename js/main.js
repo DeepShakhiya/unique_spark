@@ -142,7 +142,6 @@
     setTimeout(() => {
         $(window).on('load', function () {
             var $grid = $topeContainer.each(function () {
-                console.log($(this))
                 $(this).isotope({
                     itemSelector: '.isotope-item',
                     layoutMode: 'fitRows',
